@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Reimbursement System - Manager Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./manager-dashboard.css">
+</head>
+<body>
+
+    <!-- Nav bar at the top of the web page -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Project1">Expense Reimbursement System</a>
+        </div>
+    </nav>
+
+    <form class="filter-form" id="filter-reimb">
+        <div>
+            <select id="status-selector">
+                <option value="ALL">ALL</option>
+                <option value="PENDING">PENDING</option>
+                <option value="APPROVED">APPROVED</option>
+                <option value="DENIED">DENIED</option>
+            </select>
+        </div>
+        <button class="btn btn-success" id="filter-btn">Filter</button>
+    </form>
+
+    <div class="reimbursement-container" id="reimb-container">
+        <div>
+            <table id="reimb-table">
+                <tr>
+                    <th>Request ID</th>
+                    <th>$ Amount</th>
+                    <th>Date Submitted</th>
+                    <th>Status</th>
+                    <th>Type</th>
+                    <th>Details/Resolve</th>
+                </tr>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>500</td>
+                    <td>2021-08-19 @ 19:24:08</td>
+                    <td>APPROVED</td>
+                    <td>LODGING</td>
+                    <td><button class="btn btn-primary" id="details-btn">Details</button></td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+
+    <script src="../globals.js"></script>
+    <script src="./manager-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(120, 120, 165, 0.877);
+}
+
+#type-selector, #amount, #description{
+    border-radius: 6px;
+    
+}
+
+#create-reimb-btn{
+    margin: 3px;
+}

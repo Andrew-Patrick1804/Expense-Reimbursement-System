@@ -1,0 +1,40 @@
+body{
+    background-color: rgba(120, 120, 165, 0.877);
+}
+
+.details-container{
+    background-color: rgb(224, 215, 215);
+    width: max-content;
+
+    display: flex;
+    justify-content: center;
+    
+
+    margin-top: 75px;
+    margin-left: 45%;
+    border-radius: 6px;
+
+    box-shadow: 2px 2px 8px black;
+    
+}
+
+.reimb-content{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#resolve-form{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#status-selector{
+    border-radius: 6px;
+    margin: 5px;
+    box-shadow: 2px 2px 4px;
+}
+
+#resolve-btn{
+    box-shadow: 2px 2px 4px black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Reimbursement System - Create New Reimbursement</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./new-reimb.css">
+</head>
+<body>
+
+    <!-- Nav bar at the top of the web page -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Project1">Expense Reimbursement System</a>
+        </div>
+    </nav>
+
+    <div class="new-reimb-container">
+        <form id="new-reimb-form">
+            <div>
+                <input type="number" step="0.01" id="amount" placeholder="$ Amount">
+            </div>
+            <div>
+                <textarea id="description" rows="5" cols="30" placeholder="Description"></textarea>
+            </div>
+            <div>
+                <select id="type-selector">
+                    <option value="1">LODGING</option>
+                    <option value="2">TRAVEL</option>
+                    <option value="3">FOOD</option>
+                    <option value="4">OTHER</option>
+                </select>
+            </div>
+            <div>
+                <button class="btn btn-success" id="create-reimb-btn">Submit New Request</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../globals.js"></script>
+    <script src="./new-reimb.js"></script>
+</body>
+</html>
