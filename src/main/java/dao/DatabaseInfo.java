@@ -5,7 +5,7 @@ package dao;
  * Information needed to connect to the Project 1 database.
  */
 public interface DatabaseInfo {
-    String DATABASE_URL = "jdbc:postgresql://revaturedatabase.cqlaquh9fibc.us-east-2.rds.amazonaws.com/project_one";
-    String DATABASE_USERNAME = "postgres";
-    String DATABASE_PASSWORD = "p4ssw0rd";
+    String DATABASE_URL = System.getenv("DATABASE_URL");
+    String DATABASE_USERNAME = System.getenv("DATABASE_USERNAME");
+    String DATABASE_PASSWORD = System.getenv("DATABASE_PASSWORD");
 }
